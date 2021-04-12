@@ -6,7 +6,7 @@ Full source code for Late Night Confessions post series.
 
 Built with Rust, Rocket, Diesel and Askama.
 
-See the posts at:
+Read the posts in this series:
 
 * [Part 1 - Launching a Rocket](#)
 * [Part 2 - Adding Diesel](#)
