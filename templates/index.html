@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Late Night Confessions</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cirrus-ui@0.6.0/dist/cirrus.min.css" />
+        <link rel="stylesheet" href="/static/styles.css" />
+        <script src="./static/confessions.js"></script>
+    </head>
+    <body>
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+
+        <div class="main">
+            <div class="avatar avatar--xlarge">
+                <img
+                    src="https://images.unsplash.com/photo-1483706600674-e0c87d3fe85b?dpr=1&auto=format&fit=crop&w=256&h=256&q=60&cs=tinysrgb&crop=fill&bg=fff"
+                />
+            </div>
+            <div class="title">
+                <h1>Late Night Confessions</h1>
+            </div>
+            <div class="confessionView">
+                <div class="card">
+                    <div class="card-container">
+                        <div class="card-image" id="confessionCardImage"></div>
+                    </div>
+                    <div class="content">
+                        <p>
+                            {{confession}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeBar">
+                <div class="progress">
+                    <div class="progress-value"></div>
+                </div>
+            </div>
+
+            <div class="addView">
+                <a href="#confession-modal"><button class="outline btn-primary">Add Yours</button></a>
+            </div>
+            <footer>
+                <p><span>♥️</span>  {{total_confessions}} confessions on record!</p>
+            </footer>
+        </div>
+            <div class="modal modal-animated--zoom-in" id="confession-modal">
+                <div class="modal-overlay"></div>
+                <div class="modal-content confessionAdd" role="document">
+                    <div class="modal-header"><a href="#main" class="u-pull-right" aria-label="Close"><span class="xBtn">X</span></a>
+                        <div class="modal-title">Confess your <span class="heart">♥️</span> out</p></div>
+                    </div>
+                    <div class="modal-body">
+                        <textarea id="confessionText" placeholder="Enter your confession"></textarea>
+                           
+                    </div>
+                    <div class="modal-footer">
+                        <div class="form-section u-text-right">
+                            <a href="#main">
+                                <button class="btn btn-small u-inline-block">Cancel</button>
+                            </a>
+                            <button class="btn-primary btn btn-small" id="btnSubmit">Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

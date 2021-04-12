@@ -1,0 +1,7 @@
+# for Apple Silicon Macs
+[target.aarch64-apple-darwin]
+rustflags = ["-L", "/opt/homebrew/opt/libpq/lib"]
+
+# for Intel Macs
+[target.x86_64-apple-darwin]
+rustflags = ["-L", "/usr/local/opt/libpq/lib"]
