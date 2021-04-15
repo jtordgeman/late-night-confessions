@@ -1,8 +1,8 @@
-# Late Night Confessions
+# Late Night Confessions 🦀
 
 ![Late Night Confessions Preview](https://cdn-images-1.medium.com/max/1600/1*tlJAI985s9Racs0c_kiTYw.png)
 
-Full source code for Late Night Confessions post series. 
+Full source code for the Late Night Confessions post series. 
 
 Built with Rust, Rocket, Diesel and Askama.
 
